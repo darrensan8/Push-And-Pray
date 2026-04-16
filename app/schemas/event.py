@@ -12,7 +12,7 @@ class EventOut(BaseModel):
     event_type: str
     repository: str
     payload: dict[str, Any]
-    recieved_at: datetime
+    created_at: datetime
 
     model_config = {
         "from_attributes": True}
