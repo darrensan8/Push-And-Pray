@@ -30,6 +30,6 @@ async def list_events(
 ):
     from sqlalchemy import select
     result = await db.execute(
-        select(GitHubEvent).where(GitHubEvent.user_id == user_id).order_by(GitHubEvent.received_at.desc())
+        select(GitHubEvent).where(GitHubEvent.user_id == user_id).order_by(GitHubEvent.created_at.desc())
     )
     return result.scalars().all()
