@@ -1,0 +1,12 @@
+fastapi 
+uvicorn 
+sqlalchemy 
+asyncpg 
+alembic
+pydantic-settings 
+pydantic[email]
+python-jose[cryptography] 
+passlib[bcrypt]
+redis 
+celery 
+slowapi
